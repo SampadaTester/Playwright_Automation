@@ -1,0 +1,35 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Node
+node_modules/
+
+# Environment variab
+.env
+.env .*
+I.env.example
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+
+# Allure
+allure-results/
+allure-report/
+
+# VS Code
+.vscode/
+
+# os files
+.DS_Store
+Thumbs.db
+
+# Logs
+".1og

@@ -1,0 +1,5 @@
+label,email,password,validity
+Valid Credentials,ruby@gmail.com,Ruby@123,valid
+invalid Email,invalid@gmail.com,Ruby@123,invalid
+invalid Password,ruby@gmail.com,testxyz,invalid
+Empty fields, , ,invalid

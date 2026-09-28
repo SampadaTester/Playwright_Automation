@@ -1,0 +1,83 @@
+- generic [active] [ref=f1e1]:
+  - link "Press \"Enter\" to skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main-container"
+  - generic [ref=f1e4]:
+    - banner [ref=f1e5]:
+      - generic [ref=f1e6]:
+        - generic:
+          - navigation
+      - link [ref=f1e10] [cursor=pointer]:
+        - /url: https://practicetestautomation.com/
+        - img "Practice Test Automation" [ref=f1e11]
+      - navigation [ref=f1e16]:
+        - navigation [ref=f1e17]:
+          - list [ref=f1e18]:
+            - listitem [ref=f1e19]:
+              - link "Home" [ref=f1e20] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/
+            - listitem [ref=f1e21]:
+              - link "Practice" [ref=f1e22] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/practice/
+            - listitem [ref=f1e23]:
+              - link "Courses" [ref=f1e24] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/courses/
+            - listitem [ref=f1e25]:
+              - link "AI Workshop" [ref=f1e26] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/workshop
+            - listitem [ref=f1e27]:
+              - link "Blog" [ref=f1e28] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/blog/
+            - listitem [ref=f1e29]:
+              - link "Contact" [ref=f1e30] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/contact/
+    - main [ref=f1e31]:
+      - generic [ref=f1e32]:
+        - heading "Test login" [level=2] [ref=f1e33]
+        - list [ref=f1e34]:
+          - listitem [ref=f1e35]: This is a simple Login page. Students can use this page to practice writing simple positive and negative LogIn tests. Login functionality is something that most of the test automation engineers need to automate.
+          - listitem [ref=f1e36]: "Use next credentials to execute Login: Username: student Password: Password123"
+        - generic [ref=f1e37]:
+          - generic [ref=f1e38]:
+            - text: Username
+            - textbox "Username" [ref=f1e39]
+          - generic [ref=f1e40]:
+            - text: Password
+            - textbox "Password" [ref=f1e41]
+          - button "Submit" [ref=f1e42] [cursor=pointer]
+        - generic [ref=f1e43]: Your username is invalid!
+        - separator [ref=f1e44]
+        - 'heading "Test case 1: Positive LogIn test" [level=5] [ref=f1e45]'
+        - list [ref=f1e46]:
+          - listitem [ref=f1e47]: Open page
+          - listitem [ref=f1e48]: Type username student into Username field
+          - listitem [ref=f1e49]: Type password Password123 into Password field
+          - listitem [ref=f1e50]: Push Submit button
+          - listitem [ref=f1e51]: Verify new page URL contains practicetestautomation.com/logged-in-successfully/
+          - listitem [ref=f1e52]: Verify new page contains expected text ('Congratulations' or 'successfully logged in')
+          - listitem [ref=f1e53]: Verify button Log out is displayed on the new page
+        - separator [ref=f1e54]
+        - 'heading "Test case 2: Negative username test" [level=5] [ref=f1e55]'
+        - list [ref=f1e56]:
+          - listitem [ref=f1e57]: Open page
+          - listitem [ref=f1e58]: Type username incorrectUser into Username field
+          - listitem [ref=f1e59]: Type password Password123 into Password field
+          - listitem [ref=f1e60]: Push Submit button
+          - listitem [ref=f1e61]: Verify error message is displayed
+          - listitem [ref=f1e62]: Verify error message text is Your username is invalid!
+        - separator [ref=f1e63]
+        - 'heading "Test case 3: Negative password test" [level=5] [ref=f1e64]'
+        - list [ref=f1e65]:
+          - listitem [ref=f1e66]: Open page
+          - listitem [ref=f1e67]: Type username student into Username field
+          - listitem [ref=f1e68]: Type password incorrectPassword into Password field
+          - listitem [ref=f1e69]: Push Submit button
+          - listitem [ref=f1e70]: Verify error message is displayed
+          - listitem [ref=f1e71]: Verify error message text is Your password is invalid!
+    - contentinfo:
+      - generic [ref=f1e73]:
+        - text: © Copyright 2020
+        - link "Practice Test Automation." [ref=f1e74] [cursor=pointer]:
+          - /url: https://practicetestautomation.com/
+        - text: All rights reserved |
+        - link "Privacy Policy" [ref=f1e75] [cursor=pointer]:
+          - /url: https://practicetestautomation.com/privacy-policy/

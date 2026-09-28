@@ -1,0 +1,26 @@
+[
+    {
+        "label": "Valid Credentials",
+        "email": "ruby@gmail.com",
+        "password": "Ruby@123",
+        "validity": "valid"
+    },
+    {
+        "label": "Invalid Email",
+        "email": "invalid@gmail.com",
+        "password": "Ruby@123",
+        "validity": "invalid"
+    },
+    {
+        "label": "Invalid Password",
+        "email": "ruby@gmail.com",
+        "password": "testxyz",
+        "validity": "invalid"
+    },
+    {
+        "label": "Empty fields",
+        "email": "",
+        "password": "",
+        "validity": "invalid"
+    }
+]
